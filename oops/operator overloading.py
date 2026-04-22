@@ -1,0 +1,25 @@
+class number:
+    def __init__(self, num):
+        self.num=num
+    def __add__(self,other):
+        return self.num+other.num
+    def __sub__(self,other):
+        return self.num-other.num
+    def __mul__(self,other):
+        return self.num*other.num
+    def __gt__(self,other):
+        return self.num>other.num
+    def __lt__(self,other):
+        return self.num<other.num
+    def __str__(self):
+        return str(self.num)
+
+a=number(10)
+b=number(20)
+
+print(a+b)
+print(a-b)
+print(a*b)
+print(a>b)
+print(a<b)
+print(a,b)
